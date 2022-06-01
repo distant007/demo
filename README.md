@@ -1,1 +1,1 @@
-[Мой сfqn](https://distant007.github.io/demo/)
+[Мой сайт](https://distant007.github.io/demo/)
