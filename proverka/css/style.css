@@ -1,0 +1,262 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #EFF6FF;
+  font-family: 'Barlow', sans-serif;
+}
+h1,
+h2,
+h3{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  margin: 0 auto;
+  padding: 100px 70px;
+}
+.window{
+  margin: 50px 70px 0 70px;
+  background-color: #fff;
+  display: flex;
+}
+.left__side{
+  position: relative;
+}
+.logo{
+  position: absolute;
+  left: 50px;
+  top: 25px;
+}
+.title{
+  color: #2A4A5C;
+  font-weight: 500;
+  font-size: 30px;
+  padding-bottom: 13px;
+}
+.subtitle{
+  color: #7B8A92;
+  font-weight: 300;
+  padding-bottom: 50px;
+}
+.buttons{
+  display: flex;
+  padding-bottom: 50px;
+}
+.buttons__fac{
+  background-color: #255A9B;
+  border: none;
+  font-weight: 300;
+  margin-right: 45px;
+  padding-left: 12px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.buttons__fac a{
+  display: flex;
+  align-items: center;
+  color: #EEEEEE;
+}
+.buttons__link{
+  background-color: #0076B6;
+  border: none;
+  font-weight: 300;
+  padding-left: 12px;
+  cursor: pointer;
+  padding-right: 30px;
+}
+.buttons__link a{
+  display: flex;
+  align-items: center;
+  color: #EEEEEE;
+}
+.buttons__link-text{
+  padding: 13px 15px 13px 15px;
+}
+.another{
+  overflow: hidden;
+  padding-left: 248px;
+  position: relative;
+  margin: 0 auto;
+  font-size: 12px;
+}
+.another:before{
+  display: block;
+  width:130px;
+  content: '';
+  position: absolute;
+  border-bottom: .5px solid #000;
+  top:50%;
+  left: 270px;
+  opacity: .3;
+}
+.another:after{
+  display: block;
+  width:130px;
+  content: '';
+  position: absolute;
+  border-bottom: .5px solid #000;
+  top:50%;
+  left: 111px;
+  opacity: .3;
+}
+.inputs{
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.input{
+  width: 231px;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: .5px solid #bdbdbd;
+  border-radius: 0.25rem;
+}
+.input:focus{
+  border-left: 2px solid #3698FB;
+  outline: none;
+}
+.input:not(:placeholder-shown){
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  font-size: 15px;
+}
+.email{
+  position: relative;
+}
+.email__label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 4px 0px 0px 8px;
+  color: #bdbdbd;
+}
+.phone{
+  position: relative;
+  margin-left: 30px;
+}
+.tel__label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 4px 0px 0px 8px;
+  color: #bdbdbd;
+}
+.question__title{
+  color: #2A4A5C;
+  font-weight: 500;
+  font-size: 25px;
+  padding-bottom: 13px;
+}
+.question__subtitle{
+  color: #7B8A92;
+  font-size: 17px;
+  font-weight: 300;
+  padding-bottom: 50px;
+}
+.check__point{
+ padding-bottom: 30px;
+ display: flex;
+}
+.check__point-img{
+  padding-right: 25px;
+}
+.check__point-label{
+  padding-left: 5px;
+  padding-right: 2px;
+}
+.info{
+  width: 260px;
+  color: #7B8A92;
+  font-size: 15px;
+  font-weight: 300;
+  box-shadow: 0px 5px 25px -1px rgba(34, 60, 80, 0.2);
+  padding: 10px;
+}
+.info p{
+  margin: 0;
+}
+.agrees{
+  padding-top: 40px;
+  color: #7B8A92;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.agrees__label{
+  padding-left: 3px;
+}
+.agrees__link{
+  text-decoration: underline;
+  color: #3698FB;
+}
+.create{
+  background-color: #3698FB;
+  border: 1px solid #3698FB;
+  border-radius: 4%;
+  font-weight: 300;
+  margin-right: 45px;
+  padding-left: 12px;
+  cursor: pointer;
+  padding: 15px 70px 15px 70px;
+}
+.create a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+@media (max-width:1500px){
+  .buttons{
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 25px;
+  }
+  .buttons__link{
+    margin-top: 20px;
+    padding-right: 39px;
+  }
+  .inputs{
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .phone{
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .another{
+    padding-left: 135px;
+  }
+  .another:after{
+    left: 0;
+  }
+  .another:before{
+    left: 155px;
+  }
+  .check__point{
+    display: block;
+  }
+  .container{
+    padding: 25px 70px;
+  }
+  .subtitle{
+    padding-bottom: 25px;
+  }
+  .question__subtitle{
+    padding-bottom: 25px;
+  }
+  .create{
+    margin-right: 0;
+  }
+}
